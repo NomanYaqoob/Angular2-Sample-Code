@@ -1,0 +1,12 @@
+.setWidth {
+    height: 400px;
+}
+
+
+.head {
+    background: #7e93a7;
+    /*display: inline;0*/
+    width: 500px;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
