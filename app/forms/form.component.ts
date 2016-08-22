@@ -21,10 +21,19 @@ export class FormCmp {
         // Validators.compose are used to merge validations
 
         // this.sku = this.myForm.controls["sku"];
+
+
+        // Subscribing a Form to watch the changes
+        this.myForm.valueChanges.subscribe((form) => {
+            console.log("Form changes to", form);
+        })
     }
     onSubmit(form: any): void {
         console.log('you submitted value:', form);
     }
+
+
+
 
 
     // Writing a Custom Validtor with Regx

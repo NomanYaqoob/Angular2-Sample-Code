@@ -1,10 +1,12 @@
 import {Component, trigger, animate, state, style, transition} from "@angular/core";
 import {FormCmp} from "./forms/form.component"
+import {HttpCmp} from "./http/http.component"
+import {YouTubeSearchComponent} from "./YoutubeSearchCmp/YoutubeSearchComponent"
 var $: any;
 @Component({
     selector: "my-app",
     templateUrl: "./app/app.component.html",
-    directives: [FormCmp]
+    directives: [FormCmp,HttpCmp,YouTubeSearchComponent]
 })
 
 export class AppComponent {

@@ -17,6 +17,10 @@ var FormCmp = (function () {
         });
         // Validators.compose are used to merge validations
         // this.sku = this.myForm.controls["sku"];
+        // Subscribing a Form to watch the changes
+        this.myForm.valueChanges.subscribe(function (form) {
+            console.log("Form changes to", form);
+        });
     }
     FormCmp.prototype.onSubmit = function (form) {
         console.log('you submitted value:', form);

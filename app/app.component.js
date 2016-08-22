@@ -10,6 +10,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var form_component_1 = require("./forms/form.component");
+var http_component_1 = require("./http/http.component");
+var YoutubeSearchComponent_1 = require("./YoutubeSearchCmp/YoutubeSearchComponent");
 var $;
 var AppComponent = (function () {
     function AppComponent() {
@@ -32,7 +34,7 @@ var AppComponent = (function () {
         core_1.Component({
             selector: "my-app",
             templateUrl: "./app/app.component.html",
-            directives: [form_component_1.FormCmp]
+            directives: [form_component_1.FormCmp, http_component_1.HttpCmp, YoutubeSearchComponent_1.YouTubeSearchComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
